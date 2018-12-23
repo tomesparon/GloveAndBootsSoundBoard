@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GloveAndBoots SoundBoard</string>
+
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_settings">Settings (Soon TM)</string>
+    <string name="drawer_item_youtube">GAB Youtube</string>
+    <string name="drawer_item_twitter">GAB Twitter</string>
+    <string name="drawer_item_facebook">GAB Facebook</string>
+
+    <!--<string name="aint_it_swell">Ain\'t it swell</string>-->
+    <!--<string name="arigato_sushizi">Arigato Sushizi</string>-->
+    <!--<string name="everything_is_covered_in_feces">Everything is covered in feces</string>-->
+    <!--<string name="food_in_my_face">Food in my face</string>-->
+    <!--<string name="gorilla_of_thrones">Gorilla of Thrones</string>-->
+    <!--<string name="grandfunkmaster">Grandfunkmaster</string>-->
+    <!--<string name="hbo_meeeh">HBO meeeh</string>-->
+    <!--<string name="i_dont_care">I don\'t care</string>-->
+    <!--<string name="its_garry_busey">It\'s Garry Busey!</string>-->
+    <!--<string name="keep_the_shark_balls">Keep the shark balls</string>-->
+    <!--<string name="lisa_n">Lisa N</string>-->
+    <!--<string name="lisa_n_mario">Lisa N (Mario)</string>-->
+    <!--<string name="meh">Meh.</string>-->
+    <!--<string name="role_the_footage">Role the footage</string>-->
+    <!--<string name="stop_being_crazy">Stop being crazy!</string>-->
+    <!--<string name="theres_nowhere_to_take_a_feces">There\'s nowhere to take a feces</string>-->
+    <!--<string name="troll">Troll!</string>-->
+    <!--<string name="update_is_making_my_hungry">Updating is making me hungry</string>-->
+    <!--<string name="what_is_twitter">What IS the twitter</string>-->
+</resources>

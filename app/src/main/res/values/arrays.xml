@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--Add new sounds here with a item label and link to raw audio file-->
+    <string-array name="labels">
+        <item>Ain\'t it swell</item>
+        <item>Arigato Sushizi</item>
+        <item>Everything is covered in feces</item>
+        <item>Food in my Face</item>
+        <item>Gorilla of Thrones</item>
+        <item>Grand FunkMaster</item>
+        <item>HBO MEH</item>
+        <item>I Don\'t care</item>
+        <item>It\'s Garry Busey</item>
+        <item>Keep the Shark Balls</item>
+        <item>Lisa N (FAFA)</item>
+        <item>Lisa N (Mario)</item>
+        <item>Meh.</item>
+        <item>Role the Footage</item>
+        <item>Stop Being Crazy!</item>
+        <item>There\'s nowhere to take a feces</item>
+        <item>Troll!</item>
+        <item>Update = hungry</item>
+        <item>What is Twitter?</item>
+        <item>What is Twitter?</item>
+
+    </string-array>
+
+
+
+    <integer-array name="ids">
+        <item>@raw/aint_it_swell</item>
+        <item>@raw/arigato_sushizi</item>
+        <item>@raw/everything_is_covered_in_feces</item>
+        <item>@raw/food_in_my_face</item>
+        <item>@raw/gorilla_of_thrones</item>
+        <item>@raw/grandfunkmaster</item>
+        <item>@raw/hbo_meeeh</item>
+        <item>@raw/i_dont_care</item>
+        <item>@raw/its_garry_busey</item>
+        <item>@raw/keep_the_shark_balls</item>
+        <item>@raw/lisa_n</item>
+        <item>@raw/lisa_n_mario</item>
+        <item>@raw/meh</item>
+        <item>@raw/role_the_footage</item>
+        <item>@raw/stop_being_crazy</item>
+        <item>@raw/theres_nowhere_to_take_a_feces</item>
+        <item>@raw/troll</item>
+        <item>@raw/update_is_making_my_hungry</item>
+        <item>@raw/what_is_tweeter</item>
+        <item>@raw/what_is_tweeter</item>
+    </integer-array>
+
+</resources>
