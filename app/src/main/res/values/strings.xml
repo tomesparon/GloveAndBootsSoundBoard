@@ -2,7 +2,7 @@
     <string name="app_name">GloveAndBoots SoundBoard</string>
 
     <string name="drawer_item_home">Home</string>
-    <string name="drawer_item_settings">Settings (Soon TM)</string>
+    <string name="drawer_item_settings">Settings</string>
     <string name="drawer_item_youtube">GAB Youtube</string>
     <string name="drawer_item_twitter">GAB Twitter</string>
     <string name="drawer_item_facebook">GAB Facebook</string>

@@ -4,11 +4,14 @@ package com.arachnoidapps.tomesparon.gloveandbootssoundboard;
  * Created by Tom Esparon on 05/01/2018.
  */
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.util.Log;
 
 import java.io.IOException;
+
+import androidx.preference.PreferenceManager;
 
 
 class SoundPlayer {
@@ -18,7 +21,7 @@ class SoundPlayer {
 
     private static final String TAG = "SoundPlayer";
     private final static int MAX_VOLUME = 100;
-    private int soundVolume = 50;
+    //private int soundVolume = 50;
 
 
 
@@ -28,14 +31,18 @@ class SoundPlayer {
 
     void playSound(Sound sound) {
         int resource = sound.getResourceId();
-        //final float volume = (float) (1 - (Math.log(MAX_VOLUME - soundVolume) / Math.log(MAX_VOLUME)));
-        //mPlayer.setVolume(volume, volume);
-        //mPlayer.setVolume(1, 1);
-        //mPlayer.setVolume(0.09f , 0.09f);
-        final float volume = (float) (1 - (Math.log(MAX_VOLUME - soundVolume) / Math.log(MAX_VOLUME)));
+
+        // get the settings stored value for volume and use in the playSound method
+        SharedPreferences sharedPreferences =
+                PreferenceManager.getDefaultSharedPreferences(mContext);
+        int pVol = sharedPreferences.getInt("volumebar_preference",50);
+
+
+        final float volume = (float) (1 - (Math.log(MAX_VOLUME - pVol) / Math.log(MAX_VOLUME)));
         if (mPlayer != null) {
             if (mPlayer.isPlaying())
                 mPlayer.stop();
+            // something something release unused threads
             //mPlayer.reset();
             //release();
 
@@ -62,7 +69,7 @@ class SoundPlayer {
         }
         mPlayer.start();
     }
-
+    //doesn't seem to be used, but should release old instances of mPlayer
     void release() {
         if (mPlayer != null) {
             mPlayer.release();

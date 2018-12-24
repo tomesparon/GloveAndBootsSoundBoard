@@ -50,58 +50,60 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Handle NavToolbar
-        result = new DrawerBuilder()
-                .withActivity(this)
-                .withSavedInstance(savedInstanceState)
-                .withDisplayBelowStatusBar(false)
-                .withTranslucentStatusBar(false)
-                .withDrawerLayout(R.layout.material_drawer_fits_not)
-                .withActionBarDrawerToggle(true)
-                .addDrawerItems(
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_home).withIcon(FontAwesome.Icon.faw_home),
-                        new SecondaryDrawerItem().withName(R.string.drawer_item_settings).withIcon(FontAwesome.Icon.faw_cog),
-                        new SecondaryDrawerItem().withName(R.string.drawer_item_youtube).withIcon(FontAwesome.Icon.faw_youtube),
-                        new SecondaryDrawerItem().withName(R.string.drawer_item_twitter).withIcon(FontAwesome.Icon.faw_twitter),
-                        new SecondaryDrawerItem().withName(R.string.drawer_item_facebook).withIcon(FontAwesome.Icon.faw_facebook)
-                )
-                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem instanceof Nameable) {
-                            Toast.makeText(MainActivity.this, ((Nameable) drawerItem).getName().getText(MainActivity.this), Toast.LENGTH_SHORT).show();
+        DrawerUtil.getDrawer(this);
 
-                            switch (result.getCurrentSelectedPosition()) {
-                                case 1:
-                                    Log.e("Pos","Pos1");
-                                    Intent settingsIntent = new Intent(view.getContext(), SettingsActivity.class );
-                                    startActivity(settingsIntent);
-                                    return true;
-
-                                case 2:
-                                    Intent myWebLink2 = new Intent(android.content.Intent.ACTION_VIEW);
-                                    myWebLink2.setData(Uri.parse("http://youtube.com/c/gloveandbootsofficial"));
-                                    startActivity(myWebLink2);
-                                    return true;
-                                case 3:
-                                    Intent myWebLink3 = new Intent(android.content.Intent.ACTION_VIEW);
-                                    myWebLink3.setData(Uri.parse("http://twitter.com/gloveandboots"));
-                                    startActivity(myWebLink3);
-                                    return true;
-                                case 4:
-                                    Intent myWebLink4 = new Intent(android.content.Intent.ACTION_VIEW);
-                                    myWebLink4.setData(Uri.parse("http://facebook.com/gloveandboots"));
-                                    startActivity(myWebLink4);
-                                    return true;
-                                default:
-                                    result.closeDrawer();
-                                    return true;
-                            }
-                        }
-
-                        return false;
-                    }
-                }).build();
+//        // Handle NavToolbar
+//        result = new DrawerBuilder()
+//                .withActivity(this)
+//                .withSavedInstance(savedInstanceState)
+//                .withDisplayBelowStatusBar(false)
+//                .withTranslucentStatusBar(false)
+//                .withDrawerLayout(R.layout.material_drawer_fits_not)
+//                .withActionBarDrawerToggle(true)
+//                .addDrawerItems(
+//                        new PrimaryDrawerItem().withName(R.string.drawer_item_home).withIcon(FontAwesome.Icon.faw_home),
+//                        new SecondaryDrawerItem().withName(R.string.drawer_item_settings).withIcon(FontAwesome.Icon.faw_cog),
+//                        new SecondaryDrawerItem().withName(R.string.drawer_item_youtube).withIcon(FontAwesome.Icon.faw_youtube),
+//                        new SecondaryDrawerItem().withName(R.string.drawer_item_twitter).withIcon(FontAwesome.Icon.faw_twitter),
+//                        new SecondaryDrawerItem().withName(R.string.drawer_item_facebook).withIcon(FontAwesome.Icon.faw_facebook)
+//                )
+//                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+//                    @Override
+//                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
+//                        if (drawerItem instanceof Nameable) {
+//                            Toast.makeText(MainActivity.this, ((Nameable) drawerItem).getName().getText(MainActivity.this), Toast.LENGTH_SHORT).show();
+//
+//                            switch (result.getCurrentSelectedPosition()) {
+//                                case 1:
+//                                    Log.e("Pos","Pos1");
+//                                    Intent settingsIntent = new Intent(view.getContext(), SettingsActivity.class );
+//                                    startActivity(settingsIntent);
+//                                    return true;
+//
+//                                case 2:
+//                                    Intent myWebLink2 = new Intent(android.content.Intent.ACTION_VIEW);
+//                                    myWebLink2.setData(Uri.parse("http://youtube.com/c/gloveandbootsofficial"));
+//                                    startActivity(myWebLink2);
+//                                    return true;
+//                                case 3:
+//                                    Intent myWebLink3 = new Intent(android.content.Intent.ACTION_VIEW);
+//                                    myWebLink3.setData(Uri.parse("http://twitter.com/gloveandboots"));
+//                                    startActivity(myWebLink3);
+//                                    return true;
+//                                case 4:
+//                                    Intent myWebLink4 = new Intent(android.content.Intent.ACTION_VIEW);
+//                                    myWebLink4.setData(Uri.parse("http://facebook.com/gloveandboots"));
+//                                    startActivity(myWebLink4);
+//                                    return true;
+//                                default:
+//                                    result.closeDrawer();
+//                                    return true;
+//                            }
+//                        }
+//
+//                        return false;
+//                    }
+//                }).build();
 
         getSupportActionBar().setDisplayUseLogoEnabled(true);
     }

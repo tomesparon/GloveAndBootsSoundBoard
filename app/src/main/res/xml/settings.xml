@@ -6,7 +6,8 @@
         <SeekBarPreference
             android:key="volumebar_preference"
             android:title="@string/title_volumebar_preference"
-            android:defaultValue="@string/default_volumebar_preference"/>
+            android:defaultValue="@string/default_volumebar_preference"
+            />
 
         <!--<EditTextPreference-->
             <!--android:key="edittext_preference"-->
