@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mSoundPlayer = new SoundPlayer(this);
         Sound[] soundArray = SoundStore.getSounds(this);
 
-        GridView gridView = (GridView) findViewById(R.id.gridView);
+        GridView gridView = findViewById(R.id.gridView);
 
         final ArrayAdapter<Sound> adapter =
                 new ArrayAdapter<>(this,R.layout.buttons, soundArray);
@@ -71,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, ((Nameable) drawerItem).getName().getText(MainActivity.this), Toast.LENGTH_SHORT).show();
 
                             switch (result.getCurrentSelectedPosition()) {
+                                case 1:
+                                    Log.e("Pos","Pos1");
+                                    Intent settingsIntent = new Intent(view.getContext(), SettingsActivity.class );
+                                    startActivity(settingsIntent);
+                                    return true;
+
                                 case 2:
                                     Intent myWebLink2 = new Intent(android.content.Intent.ACTION_VIEW);
                                     myWebLink2.setData(Uri.parse("http://youtube.com/c/gloveandbootsofficial"));

@@ -6,24 +6,86 @@
     <string name="drawer_item_youtube">GAB Youtube</string>
     <string name="drawer_item_twitter">GAB Twitter</string>
     <string name="drawer_item_facebook">GAB Facebook</string>
+    <string name="title_first_section"> General</string>
+    <string name="title_second_section"> Second Section</string>
+    <string name="default_volumebar_preference">50</string>
+    <string name="title_volumebar_preference">Volume</string>
 
-    <!--<string name="aint_it_swell">Ain\'t it swell</string>-->
-    <!--<string name="arigato_sushizi">Arigato Sushizi</string>-->
-    <!--<string name="everything_is_covered_in_feces">Everything is covered in feces</string>-->
-    <!--<string name="food_in_my_face">Food in my face</string>-->
-    <!--<string name="gorilla_of_thrones">Gorilla of Thrones</string>-->
-    <!--<string name="grandfunkmaster">Grandfunkmaster</string>-->
-    <!--<string name="hbo_meeeh">HBO meeeh</string>-->
-    <!--<string name="i_dont_care">I don\'t care</string>-->
-    <!--<string name="its_garry_busey">It\'s Garry Busey!</string>-->
-    <!--<string name="keep_the_shark_balls">Keep the shark balls</string>-->
-    <!--<string name="lisa_n">Lisa N</string>-->
-    <!--<string name="lisa_n_mario">Lisa N (Mario)</string>-->
-    <!--<string name="meh">Meh.</string>-->
-    <!--<string name="role_the_footage">Role the footage</string>-->
-    <!--<string name="stop_being_crazy">Stop being crazy!</string>-->
-    <!--<string name="theres_nowhere_to_take_a_feces">There\'s nowhere to take a feces</string>-->
-    <!--<string name="troll">Troll!</string>-->
-    <!--<string name="update_is_making_my_hungry">Updating is making me hungry</string>-->
-    <!--<string name="what_is_twitter">What IS the twitter</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
 </resources>
