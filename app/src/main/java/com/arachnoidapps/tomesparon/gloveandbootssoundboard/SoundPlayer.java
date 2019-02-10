@@ -1,28 +1,20 @@
 package com.arachnoidapps.tomesparon.gloveandbootssoundboard;
-
 /**
  * Created by Tom Esparon on 05/01/2018.
  */
+import java.io.IOException;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.util.Log;
-
-import java.io.IOException;
-
 import androidx.preference.PreferenceManager;
 
-
 class SoundPlayer {
-
     private MediaPlayer mPlayer;
     private Context mContext;
-
     private static final String TAG = "SoundPlayer";
     private final static int MAX_VOLUME = 100;
-    //private int soundVolume = 50;
-
 
 
     SoundPlayer(Context context) {
@@ -36,7 +28,6 @@ class SoundPlayer {
         SharedPreferences sharedPreferences =
                 PreferenceManager.getDefaultSharedPreferences(mContext);
         int pVol = sharedPreferences.getInt("volumebar_preference",50);
-
 
         final float volume = (float) (1 - (Math.log(MAX_VOLUME - pVol) / Math.log(MAX_VOLUME)));
         if (mPlayer != null) {
@@ -55,10 +46,7 @@ class SoundPlayer {
                 mPlayer.reset();
                 mPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
                 afd.close();
-
-
                 mPlayer.setVolume(volume, volume);
-
                 mPlayer.prepare();
             } catch (IOException | IllegalArgumentException | SecurityException e) {
                 Log.e(TAG, e.getMessage());

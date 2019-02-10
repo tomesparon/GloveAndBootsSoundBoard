@@ -3,7 +3,6 @@ package com.arachnoidapps.tomesparon.gloveandbootssoundboard;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,7 +15,7 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 
-import androidx.appcompat.widget.Toolbar;
+
 
 public class DrawerUtil {
     public static void getDrawer(final Activity activity) {

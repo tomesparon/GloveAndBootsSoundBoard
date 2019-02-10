@@ -1,8 +1,6 @@
 package com.arachnoidapps.tomesparon.gloveandbootssoundboard;
 
 import android.os.Bundle;
-
-
 import androidx.preference.PreferenceFragmentCompat;
 
 public class SettingsFragment extends PreferenceFragmentCompat {

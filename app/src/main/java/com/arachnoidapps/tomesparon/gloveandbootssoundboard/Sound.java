@@ -8,12 +8,12 @@ public class Sound {
     private String mName;
     private int mResourceId;
 
-    public Sound(String name, int resourceId) {
+    Sound(String name, int resourceId) {
         this.mName = name;
         this.mResourceId = resourceId;
     }
 
-    public int getResourceId() {
+    int getResourceId() {
         return mResourceId;
     }
 
